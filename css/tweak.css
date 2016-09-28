@@ -139,7 +139,7 @@ darkBG {
 
 
 @media only screen and (max-width: 430px) {
-    /* For mobile phones: */
+    /* For iphone5: */
 .introNew {
     font-size:40px;
     font-size-adjust: auto;
@@ -196,3 +196,188 @@ darkBG {
     margin-bottom: 30px;
     }
 }
+
+
+/*For iphone6*/
+@media only screen and (max-width: 375px) {
+.introNew {
+    font-size:40px;
+    font-size-adjust: auto;
+    line-height:40px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.condensed {
+    font-family: times new roman;
+    letter-spacing: -3px; 
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    margin:-30px;
+}
+
+.head-container
+{   
+    width:80%;
+    position: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    align-items: center;
+    margin: 0 auto;
+}
+.headerDivider {
+     margin-top: 1px;
+     border-left:1px solid white; 
+     border-right:1px solid white; 
+     height:65px;
+     position:absolute;
+     right:160px;
+     top:90px;
+}
+
+.title-container
+{   
+    word-wrap: break-word;
+    width: 350px;
+    text-align: right;
+    margin: 0 auto;
+    font-size:25px;
+    font-size-adjust: auto;
+    line-height:30px;
+    font-family: montserrat;
+    letter-spacing: -2px; 
+    color: black;
+    margin-left: 10px;
+    margin-top: -58px;
+    margin-bottom: 30px;
+    }
+}
+
+
+
+
+/*For galaxy*/
+@media only screen and (max-width: 360px) {
+.introNew {
+    font-size:40px;
+    font-size-adjust: auto;
+    line-height:40px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.condensed {
+    font-family: times new roman;
+    letter-spacing: -3px; 
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    margin:-30px;
+}
+
+.head-container
+{   
+    width:80%;
+    position: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    align-items: center;
+    margin: 0 auto;
+}
+.headerDivider {
+     margin-top: 1px;
+     border-left:1px solid white; 
+     border-right:1px solid white; 
+     height:65px;
+     position:absolute;
+     right:170px;
+     top:90px;
+}
+
+.title-container
+{   
+    word-wrap: break-word;
+    width: 350px;
+    text-align: right;
+    margin: 0 auto;
+    font-size:25px;
+    font-size-adjust: auto;
+    line-height:30px;
+    font-family: montserrat;
+    letter-spacing: -2px; 
+    color: black;
+    margin-left: -1px;
+    margin-top: -58px;
+    margin-bottom: 30px;
+    }
+}
+
+
+
+/*For nexus*/
+@media only screen and (max-width: 412px) {
+.introNew {
+    font-size:40px;
+    font-size-adjust: auto;
+    line-height:40px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.condensed {
+    font-family: times new roman;
+    letter-spacing: -3px; 
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    margin:-30px;
+}
+
+.head-container
+{   
+    width:80%;
+    position: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    align-items: center;
+    margin: 0 auto;
+}
+.headerDivider {
+     margin-top: 1px;
+     border-left:1px solid white; 
+     border-right:1px solid white; 
+     height:65px;
+     position:absolute;
+     right:150px;
+     top:90px;
+}
+
+.title-container
+{   
+    word-wrap: break-word;
+    width: 350px;
+    text-align: right;
+    margin: 0 auto;
+    font-size:25px;
+    font-size-adjust: auto;
+    line-height:30px;
+    font-family: montserrat;
+    letter-spacing: -2px; 
+    color: black;
+    margin-left: 0px;
+    margin-top: -58px;
+    margin-bottom: 30px;
+    }
+}
+
+
