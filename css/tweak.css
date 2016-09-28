@@ -28,7 +28,7 @@
     color: black; 
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:20px;
-    padding-top: 10px;
+    line-height: 50px;
     text-transform: uppercase;
 }
 
@@ -150,6 +150,14 @@ darkBG {
     margin-bottom: 40px;
     margin-top: 40px;
 }
+    
+.logo {
+    color: white; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
+}
 
 .condensed {
     font-family: times new roman;
@@ -211,6 +219,14 @@ darkBG {
     margin-top: 40px;
 }
 
+.logo {
+    color: white; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
+}
+    
 .condensed {
     font-family: times new roman;
     letter-spacing: -3px; 
@@ -259,6 +275,142 @@ darkBG {
 }
 
 
+@media only screen and (max-width: 430px) {
+    /* For iphone5: */
+.introNew {
+    font-size:40px;
+    font-size-adjust: auto;
+    line-height:40px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+    
+.logo {
+    color: white; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.condensed {
+    font-family: times new roman;
+    letter-spacing: -3px; 
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    margin:-30px;
+}
+
+.head-container
+{   
+    width:80%;
+    position: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    align-items: center;
+    margin: 0 auto;
+}
+.headerDivider {
+     margin-top: 1px;
+     border-left:1px solid white; 
+     border-right:1px solid white; 
+     height:65px;
+     position:absolute;
+     right:130px;
+     top:90px;
+}
+
+.title-container
+{   
+    word-wrap: break-word;
+    width: 350px;
+    text-align: right;
+    margin: 0 auto;
+    font-size:25px;
+    font-size-adjust: auto;
+    line-height:30px;
+    font-family: montserrat;
+    letter-spacing: -2px; 
+    color: black;
+    margin-left: -35px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    }
+}
+
+
+/*For ipad*/
+@media only screen and (max-width: 769px) {
+.introNew {
+    font-size:70px;
+    font-size-adjust: auto;
+    line-height:55px;
+    height: 50px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.logo {
+    color: black; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
+}
+    
+.condensed {
+    font-family: times new roman;
+    letter-spacing: -5px; 
+    color: white;
+    text-align: left;
+    padding-top: 90px;
+    margin: 0px;
+}
+
+.head-container
+{   
+    width:89%;
+    height: 200px;
+    position: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+    align-items: center;
+    margin: 0 auto;
+}
+.headerDivider {
+     margin-top: 1px;
+     border-left:1px solid white; 
+     border-right:1px solid white; 
+     height:90px;
+     position:absolute;
+     right:360px;
+     top:198px;
+}
+
+.title-container
+{   
+    word-wrap: break-word;
+    width: 400px;
+    text-align: right;
+    margin: 0 auto;
+    font-size:45px;
+    font-size-adjust: auto;
+    line-height:40px;
+    font-family: montserrat;
+    letter-spacing: -2px; 
+    color: black;
+    margin-left: 280px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    }
+}
+
 
 
 /*For galaxy*/
@@ -271,6 +423,14 @@ darkBG {
     vertical-align: middle;
     margin-bottom: 40px;
     margin-top: 40px;
+}
+    
+.logo {
+    color: white; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
 }
 
 .condensed {
