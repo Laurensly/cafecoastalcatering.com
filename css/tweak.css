@@ -482,7 +482,7 @@ darkBG {
 
 
 
-/*For nexus*/
+/*For nexus or galaxys5*/
 @media only screen and (max-width: 412px) {
 .introNew {
     font-size:40px;
@@ -539,12 +539,12 @@ darkBG {
     margin: 0 auto;
     font-size:25px;
     font-size-adjust: auto;
-    line-height:30px;
+    line-height:22px;
     font-family: montserrat;
     letter-spacing: -2px; 
     color: black;
     margin-left: 0px;
-    margin-top: -58px;
+    margin-top: -150px;
     margin-bottom: 30px;
     }
 }
