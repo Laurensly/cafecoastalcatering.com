@@ -32,6 +32,7 @@
     text-transform: uppercase;
 }
 
+
 .red {
     color: coral;
     background-color: coral;
@@ -332,6 +333,14 @@ darkBG {
     margin-bottom: 40px;
     margin-top: 40px;
 }
+    
+.logo {
+    color: white; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;
+    margin:10px;
+    text-transform: uppercase;
+}
 
 .condensed {
     font-family: times new roman;
@@ -379,5 +388,6 @@ darkBG {
     margin-bottom: 30px;
     }
 }
+
 
 
