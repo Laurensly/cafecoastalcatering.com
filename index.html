@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--gallery meta-->
 
     <title>Cafe Coastal Catering</title>
 
@@ -30,12 +31,6 @@
     type ='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    
-<!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="galleria/galleria-1.4.min.js"></script>
-    <style>
-    .galleria{ width: 700px; height: 400px; background: #000 }
-    </style>-->
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -937,22 +932,12 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Gallery-->
-                            <h3>New Gallery Coming Soon!</h3>
-                            <iframe width="480" height="360" src="http://s38.photobucket.com/user/Lauren_Slyman/embed/slideshow/Cafe%20Coastal%20Catering"></iframe>
+                           <div class="wrap">
+                               <h4>New Gallery Coming Soon.</h4>
+    <iframe width="480" height="360" src="http://s38.photobucket.com/user/Lauren_Slyman/embed/slideshow/Cafe%20Coastal%20Catering"></iframe>
+                    <!-- Gallery End -->
                             <h4>If album does not work, please visit this link, 
                                 <a href= "http://s38.photobucket.com/user/Lauren_Slyman/Cafe%20Coastal%20Catering/story"><u>here.</u></a></h4>
-                            
-                    <!--<script src="jbcore/juicebox.js"></script>
-                        <script>
-                        new juicebox({
-                        containerId: "juicebox-container",
-                        galleryWidth: "100%",
-                        galleryHeight: "100%",
-                        backgroundColor: "#222222"
-                        });
-                        </script>
-                    <div id="juicebox-container"></div>-->
-                            
                             <br>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
                         </div>
@@ -979,8 +964,24 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-   
     
+    <!--Gallery JavaScript-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript">
+    $(function(){
+       // See if this is a touch device
+       if ('ontouchstart' in window)
+       {
+          // Set the correct [touchscreen] body class
+          $('body').removeClass('no-touch').addClass('touch');
+
+          // Add the touch toggle to show text when tapped
+          $('div.boxInner img').click(function(){
+             $(this).closest('.boxInner').toggleClass('touchFocus');
+          });
+       }
+    });
+    </script>
     
 </body>
 
