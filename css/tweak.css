@@ -50,60 +50,63 @@ img.grayscale:hover {
 }
 
 /*all headers at top*/
-.introNew {
-    font-weight:600;
-    font-size: 8vw;
-    font-size-adjust: auto;
-    line-height:6vw;
-    height: 15vw;
-    vertical-align: middle;
-    margin-bottom: 3vw;
-    margin-top: 10vw;
-}
 
 .condensed {
+    font-weight:600;
     font-family: times new roman;
-    letter-spacing: -.6vw; 
+    letter-spacing: -.3vw; 
     color: white;
-    text-align: left;
+    font-size: 98px;
+    line-height: 80%;
+    display: block;
+    clear: both;
+    float: left;
 }
 
-.head-container
+.header-container
 {   
-    width:80%;
-    position: inherit;
-    margin-right: auto;
-    margin-left: auto;
-    word-wrap: break-word;
-    align-items: center;
-    margin: 0 auto;
+    margin-top: 6%;
+    background-image: url("../img/backdrops/starter%20shrimp%20faded2.jpg");
+    background-size: cover;
 }
+
 .headerDivider {
-     margin-top: 13.5vw;
-     border-left:1px solid white; 
-     border-right:1px solid white; 
-     height:11.5vw;
-     position:absolute;
-     right:50vw;
-     top:2vw;
+    background-color: white;
+    height: 300px;
+    width: 5px;
+    float: right;
+    margin: 0%;
 }
 
-.title-container
+.title-logo
 {   
-    word-wrap: break-word;
-    width: 45vw;
-    text-align: right;
-    margin: 0 auto;
-    font-size:5.5vw;
-    font-size-adjust: auto;
-    line-height:4.2vw;
+    text-transform: uppercase;
     font-family: montserrat;
     font-weight: 600;
     letter-spacing: -2px; 
     color: black;
-    margin-left:38vw;
-    margin-top:-12vw;
-    margin-bottom: 3vw;
+    font-size: 100px;
+    line-height: 80%;
+    text-align: right;
+    word-wrap: normal;
+}
+
+.right-title{
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    float: right;
+    position: fixed;
+    text-align: right;
+    clear: both;
+    display: table;
+    vertical-align: middle;
+}
+
+.newbtn{
+    position: relative;
+    border-radius: 0%;
+    margin-top: 10%;
 }
 /*all headers at top END*/
 
@@ -132,72 +135,126 @@ darkBG {
 }
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
-.introNew {
-    font-size:40px;
-    font-size-adjust: auto;
-    line-height:40px;
-    height: 50px;
-    vertical-align: middle;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
 
-.condensed {
-    font-family: times new roman;
-    letter-spacing: -3px; 
-    color: white;
-    text-align: left;
-    padding-top: 30px;
-    margin:-30px;
-}
-
-.head-container
-{   
-    width:80%;
-    position: inherit;
-    margin-right: auto;
-    margin-left: auto;
-    word-wrap: break-word;
-    align-items: center;
-    margin: 0 auto;
-}
-.headerDivider {
-     margin-top: 1px;
-     border-left:1px solid white; 
-     border-right:1px solid white; 
-     height:65px;
-     position:absolute;
-     right:215px;
-     top:90px;
-}
-
-.title-container
-{   
-    word-wrap: break-word;
-    width: 350px;
-    text-align: right;
-    margin: 0 auto;
-    font-size:30px;
-    font-size-adjust: auto;
-    line-height:30px;
-    font-family: montserrat;
-    letter-spacing: -2px; 
-    color: black;
-    margin-left: 40px;
-    margin-top: -50px;
-    margin-bottom: 30px;
+    .condensed {
+        font-family: times new roman;
+        color: white;
+        font-size: 20px;
+        line-height: 80%;
+        width: auto;
     }
-}
 
-middlePg {
-    height: 200px;
-    width: 400px;
+    .headerDivider {
+        background-color: white;
+        height: 80px;
+        width: 2%;
+    }
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -200px;
+    .title-logo
+    {   
+        text-transform: uppercase;
+        font-family: montserrat;
+        font-weight: 600;
+        letter-spacing: -2px; 
+        color: black;
+        font-size: 32px;
+        line-height: 80%;
+        overflow: hidden;
+        width: auto;
+        float: right;
+        text-align: right;
+        word-wrap: normal;
+    }
+
+    .logo{
+        color: white;
+        position: absolute;
+        padding-top: 3%;
+        font-size: 15px;
+        padding-left: 2%;
+    }
+
+    .navbar-default .nav li a{
+        color: white;
+    }
+
+    .newbtn{
+        display: block;
+        clear: both;    
+        border-radius: 0%;    
+        font-size: 10px;
+        margin-top: 35%;
+        text-align: center;
+        padding: 2%;
+        width: 40%;
+    }
+
+    
+    /*tablet*/
+@media only screen and (min-width: 768px){
+    .condensed {
+        font-family: times new roman;
+        color: white;
+        font-size: 50px;
+        line-height: 80%;
+        width: 350px;
+        margin-right: 30%;
+    }
+    
+    .headerDivider {
+        background-color: white;
+        height: 130px;
+        width: 1.5%;
+        float: right;
+    }
+
+    .title-logo
+    {   
+        text-transform: uppercase;
+        font-family: montserrat;
+        font-weight: 600;
+        letter-spacing: -2px; 
+        color: black;
+        font-size: 50px;
+        line-height: 80%;
+        overflow: hidden;
+        width: auto;
+        float: right;
+        text-align: right;
+        word-wrap: normal;
+    }
+
+    .logo{
+        color: black;
+        position: relative;
+        font-size: 15px;
+        padding-bottom: 5%;
+        width: 100%;
+        display: block;
+    }
+
+    .newbtn{
+        display: block;
+        clear: both;    
+        border-radius: 0%;    
+        font-size: 10px;
+        margin-top: 35%;
+        text-align: center;
+        padding: 2%;
+        width: 30%;
+    }
+    
+    .header-container
+    {   
+    margin-top: 20%;
+    background-image: url("../img/backdrops/starter%20shrimp%20faded2.jpg");
+    background-size: cover;
+    }
+    
+    .navbar-default .nav li a{
+        color: black;
+        padding-right: 8px;
+    }
 }
