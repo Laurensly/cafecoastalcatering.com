@@ -20,7 +20,10 @@
     <!--mine-->
     <link href="css/tweak.css" rel="stylesheet">
     
-
+    <!--contact-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -550,7 +553,76 @@
 	</div>
 </form>
 -->
-    <section id="contact">
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="text-center">
+                        <h2 class="section-heading">Contact Us</h2>
+                        <h3 class="section-subheading text-muted" style="color: white;">Have a special event coming up? Want to get more information? Just want to say "Hi"? Tell us here.</h3>
+                    </div>
+                </div>
+    <form id="contact-form" method="post" action="contact-me.php" role="form" style="overflow:hidden;">
+        <div class="messages"></div>
+        <div class="controls">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name" style="color:white;">First Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname" style="color:white;">Last Name *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email" style="color:white;">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone" style="color:white;">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message" style="color:white;">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn-send btn-new" value="Send">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted" style="color:white;"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+</form>
+    </div>
+        </div>
+    </div>
+    </section>
+
+<!--old contact method...
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -563,10 +635,11 @@
                 <a href="cafecoastal@gmail.com" style="color:#D3D3D3" class="col-lg-3 col-md-push-3">cafecoastal@gmail.com</a>
                 <div style="color:#D3D3D3;" class="col-lg-6" align="center">|</div>
                 <div style="color:#D3D3D3;" class="col-lg-3 col-md-pull-3" align="">(904) 680-7766</div>
+                </div>
             </div>
         </div>
-        </div>
     </section>
+-->
             
     <footer>
         <div class="container">
@@ -1058,7 +1131,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
