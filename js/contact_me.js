@@ -49,8 +49,8 @@ $(function() {
                         .append("</button>");
                     $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please email us at cafecoastal@gmail.com for now.");
                     $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
+                    //NO. DO NOT... clear all fields
+                    //$('#contactForm').trigger("");
                 },
             });
         },
