@@ -1,3 +1,5 @@
+// Contact Form Scripts
+
 $(function() {
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -45,12 +47,12 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please email us at cafecoastal@gmail.com instead.");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
         },
         filter: function() {
             return $(this).is(":visible");
@@ -68,3 +70,4 @@ $(function() {
 $('#name').focus(function() {
     $('#success').html('');
 });
+Contact GitHub API Training Shop Blog About
