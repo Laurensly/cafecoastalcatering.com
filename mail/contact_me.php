@@ -15,12 +15,35 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
-// Create the email and send the message
-$to = 'cafecoastal@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
-mail($to,$email_subject,$email_body,$headers);
+require_once 'lib/swift_required.php';
+
+// Create the Transport
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+  ->setUsername(getenv('GMAIL_USER'))
+  ->setPassword(getenv('GMAIL_PASS'))
+  ;
+
+/*
+You could alternatively use a different transport such as Sendmail or Mail:
+
+// Sendmail
+$transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
+
+// Mail
+$transport = Swift_MailTransport::newInstance();
+*/
+
+// Create the Mailer using your created Transport
+$mailer = Swift_Mailer::newInstance($transport);
+
+// Create a message
+$message = Swift_Message::newInstance('Catering Inquiry')
+  ->setFrom(array('johndoe@example.com' => 'John Doe'))
+  ->setTo(array('cafecoastal@gmail.com' => 'Cafe Coastal Catering'))
+  ->setBody('Here is the message itself')
+  ;
+
+// Send the message
+$result = $mailer->send($message);
 return true;         
 ?>
