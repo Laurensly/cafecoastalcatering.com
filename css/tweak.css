@@ -43,6 +43,28 @@ img.grayscale:hover {
     -webkit-filter: grayscale(100%);
 }
 
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
 .bigPic {
     max-width: 100px;
     width: 120%;
@@ -59,8 +81,11 @@ img.grayscale:hover {
     font-size: 80px;
     line-height: 80%;
     padding-left: 25%;
-    padding-top: 2%;
-    padding-right: 5%;
+    padding-top: 5%;
+}
+
+section{
+    padding: 10% 0;
 }
 
 .title-logo
@@ -71,18 +96,17 @@ img.grayscale:hover {
     letter-spacing: -2px; 
     color: black;
     font-size: 90px;
-    padding-right: 35%;
+    padding-right: 25%;
+    padding-left: 0%;
     padding-top: 2%;
     line-height: 80%;
     text-align: right;
-    float: right;
 }
 
 .headerDivider {
     background-color: white;
     height: 190px;
-    width: 2px;
-    float: left;
+    width: 5px;
 }
 
 .newbtn{
@@ -90,7 +114,7 @@ img.grayscale:hover {
     display: block;
     clear: both;
     padding: 1%;
-    width: 20%;
+    width: 40%;
     margin-top: 2%;
 }
 
@@ -99,6 +123,7 @@ img.grayscale:hover {
     background-image: url("../img/backdrops/starter%20shrimp%20faded2.jpg");
     overflow: hidden;
     margin-top: 0%;
+    width:100%;
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -109,11 +134,13 @@ img.grayscale:hover {
 
 .contain{
     padding-top: 8%;
-    padding-bottom: 3%;
+    width: 100%;
+    padding-bottom: 8%;
+    padding-left: 5%;
 }
 
 #intro{
-    padding: 0%;
+    padding-bottom: 0%;
 }
 
 /*all headers at top END*/
@@ -137,6 +164,12 @@ darkBG {
 
 .navbar-default {
     height: auto;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 3px !important;
 }
 
 .btn-success {
@@ -200,6 +233,12 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
         color: white;
     }*/
       
+      section h2.section-heading {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+      
     .logo{
         color: black;
         position: absolute;
@@ -218,9 +257,13 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
         width: 40%;
         padding-left: 2%;
     }
+      
+    .btn {
+    font-size: 10px;
+}
       .condensed {
         font-size: 21px;
-        padding-left: 19%;
+        padding-left: 1%;
         padding-top: 0%;
         width: 100%;
         position: absolute;
@@ -230,34 +273,28 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     {   
         font-size: 23px;
         padding-top: 0%;
-        padding-right: 0%;
+        padding-right: 2%;
     }
-    
-      .col-xs-5{
-          width: 40%;
-      }
-      
-      .col-xs-1{
-          width: 5%;
-      }
+
       
       .headerDivider{
           height: 60px;
           margin-top: 0%;
-          margin-left: 20%;
-          float: right;
+          margin-left: 40%;
+          margin-right: 60%;
           position: absolute;
       }
     
       .contain{
           padding-top: 20%;
-          padding-left: 10%;
+          padding-left: 5%;
           width: 100%;
           overflow: hidden;
       }
     
       #intro {
           padding-top: 0%;
+          width: 95%;
       }
 }
     
@@ -320,7 +357,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     
       .contain{
           padding-top: 20%;
-          padding-left: 10%;
+          padding-left: 0%;
           width: 100%;
           overflow: hidden;
       }
@@ -385,20 +422,23 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
       .headerDivider{
           height: 70px;
           margin-top: 0%;
-          margin-left: 20%;
-          float: right;
+          margin-left: 60%;
+          margin-right: 60%;
           position: absolute;
       }
     
       .contain{
           padding-top: 20%;
-          padding-left: 10%;
+          padding-left: 0%;
           width: 100%;
           overflow: hidden;
       }
     
       #intro {
           padding-top: 0%;
+          width: 40%;
+          padding-left: 3%;
+          padding-right: 0%;
       }
 }
 
@@ -431,7 +471,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
    .condensed {
         font-size: 38px;
         padding-left: 19%;
-        padding-top: 0%;
+        padding-top: 2%;
         width: 100%;
         position: absolute;
     }
@@ -454,20 +494,22 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
       .headerDivider{
           height: 110px;
           margin-top: 0%;
-          margin-left: 20%;
-          float: right;
+          margin-left: 80%;
+          margin-right: 60%;
           position: absolute;
       }
     
       .contain{
-          padding-top: 20%;
-          padding-left: 10%;
+          padding-top: 15%;
+          padding-left: 0%;
           width: 100%;
           overflow: hidden;
+      }
       }
     
       #intro {
           padding-top: 0%;
+          width: 98%;
       }
 }
 
@@ -477,8 +519,16 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
-      .logo{
+      
+       .logo{
         color: darkgray;
         font-size: 13px;
         padding-left: 2%;
@@ -500,8 +550,8 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     }
       
    .condensed {
-        font-size: 48px;
-        padding-left: 9%;
+        font-size: 50px;
+        padding-left: 10%;
         padding-top: 0%;
         width: 100%;
         position: absolute;
@@ -509,7 +559,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     
       .title-logo
     {   
-        font-size: 48px;
+        font-size: 50px;
         padding-top: 6%;
         padding-right: 0%;
     }
@@ -522,17 +572,23 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
           width: 5%;
       }
       
+      p {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      
       .headerDivider{
           height: 150px;
           margin-top: 0%;
-          margin-left: 20%;
+          margin-left: 90%;
+          margin-right: 60%;
           float: right;
           position: absolute;
       }
     
       .contain{
           padding-top: 20%;
-          padding-left: 10%;
+          padding-left: 0%;
           width: 100%;
           overflow: hidden;
       }
@@ -566,4 +622,54 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+      .condensed {
+        font-size: 60px;
+        padding-left: 10%;
+        padding-top: 0%;
+        width: 100%;
+        position: absolute;
+          text-align: left;
+    }
+    
+      .title-logo
+    {   
+        font-size:60px;
+        padding-top: 0%;
+        padding-right: 0%;
+    }
+    
+      .contain{
+          padding-top: 20%;
+          padding-bottom: 10%;
+      }
+      
+      p {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      
+      .headerDivider{
+          height: 150px;
+          margin-top: 0%;
+          margin-left: 80%;
+          margin-right: 40%;
+          float: right;
+          position: absolute;
+      }
+      
+      #intro{
+          width: 100%;
+          overflow: hidden;
+      }
+
 }
