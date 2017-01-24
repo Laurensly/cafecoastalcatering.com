@@ -164,42 +164,6 @@ darkBG {
 
 .navbar-default {
     height: auto;
-    margin-bottom: 0%;
-}
-
-.jumbotron{
-    height: 80vh;
-    background-color: #000 !important;
-}
-
-.newtitle1{
-    height: 80vh;
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff !important;
-    font-size: 60px !important;
-    font-family: 'Julius Sans One', sans-serif;
-    text-transform: uppercase;
-}
-
-.newtitle1:hover{
-    text-decoration: none;
-}
-
-body
-{
-overflow:hidden;
-background:url('body.png') no-repeat;
-background-size:100%;
-display:none;
-}
-
-/*I've assigned class wHighlight to all the animate.css classes that add elements onto the page with delay.  */
-.wHighlight {background:#28a !important}
-
-.intro_page{
-    height: 100%;
-    background-color: black;
 }
 
 .nav>li>a {
