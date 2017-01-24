@@ -19,7 +19,7 @@
 }
 
 .logo {
-    color: black; 
+    color: darkseagreen; 
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:20px;
     padding-top: 10px;
@@ -27,14 +27,36 @@
 }
 
 .red {
-    color: coral;
-    background-color: coral;
+    background-color: darkseagreen;
     border-radius: 100%
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        background-color: darkseagreen;
+}
+
+.navbar-default .navbar-nav>li>a {
+        background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav>.active>a{
+    color: darkseagreen !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        color: darkseagreen !important;
+}
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        background-color: darkseagreen;
 }
 
 .dark {
     color: black;
     outline-color: black;
+}
+
+ul.social-buttons li a{
+    background-color: darkseagreen;
 }
 
 
@@ -177,29 +199,62 @@ darkBG {
     display: table-cell;
     vertical-align: middle;
     color: #fff !important;
-    font-size: 60px !important;
+    font-size: 50px !important;
+    letter-spacing: 5%;
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
 }
 
-.newtitle1:hover{
+a {
+    color: transparent; 
     text-decoration: none;
 }
 
-body
-{
+a:focus, a:hover {
+    color: transparent; 
+    text-decoration: none;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+.newlink{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+.newlink:hover{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+a .newlink{
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+a:focus, a:hover {
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+a a:focus, a:hover .newlink:hover{ 
+    color: transparent !important; 
+    text-decoration: none !important;
+}
+
+body.intro_page{
 overflow:hidden;
 background:url('body.png') no-repeat;
 background-size:100%;
 display:none;
+background-color: black;
 }
 
 /*I've assigned class wHighlight to all the animate.css classes that add elements onto the page with delay.  */
 .wHighlight {background:#28a !important}
 
 .intro_page{
-    height: 100%;
-    background-color: black;
 }
 
 .nav>li>a {
@@ -264,76 +319,37 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      
-    /*.navbar-default .nav li a{
-        color: white;
-    }*/
-      
       section h2.section-heading {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 15px;
+      }
 }
-      
-    .logo{
-        color: black;
-        position: absolute;
-        font-size: 10px;
-        padding-left: 2%;
-    }
+    
+/* mobile iphone 5: */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      section h2.section-heading {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 12%;
+	}
+}
 
-    .newbtn{
-        display: block;
-        clear: both;    
-        border-radius: 0%;    
-        font-size: 10px;
-        margin-top: 5%;
-        text-align: center;
-        padding: 2%;
-        width: 40%;
-        padding-left: 2%;
-    }
-      
-    .btn {
-    font-size: 10px;
+/* mobile iphone 5: */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      section h2.section-heading {
+    font-size: 25px;
+    margin-bottom: 15%;
+    margin-top: 20%;
 }
-      .condensed {
-        font-size: 21px;
-        padding-left: 1%;
-        padding-top: 0%;
-        width: 100%;
-        position: absolute;
-    }
-    
-      .title-logo
-    {   
-        font-size: 23px;
-        padding-top: 0%;
-        padding-right: 2%;
-    }
-
-      
-      .headerDivider{
-          height: 60px;
-          margin-top: 0%;
-          margin-left: 40%;
-          margin-right: 60%;
-          position: absolute;
-      }
-    
-      .contain{
-          padding-top: 20%;
-          padding-left: 5%;
-          width: 100%;
-          overflow: hidden;
-      }
-    
-      #intro {
-          padding-top: 0%;
-          width: 95%;
-      }
-}
-    
 
 /* iphone 6 landscape */
 @media only screen 
@@ -341,66 +357,11 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
-      .logo{
-        color: black;
-        position: absolute;
-        font-size: 13px;
-        padding-left: 2%;
-    }
-    
-      .newbtn{
-        display: block;
-        clear: both;    
-        border-radius: 0%;    
-        font-size: 10px;
-        margin-top: 10%;
-        text-align: center;
-        padding: 2%;
-        margin-right: 10%;
-    }
-      
-   .condensed {
-        font-size: 38px;
-        padding-left: 19%;
-        padding-top: 0%;
-        width: 100%;
-        position: absolute;
-    }
-    
-      .title-logo
-    {   
-        font-size: 40px;
-        padding-top: 2%;
-        padding-right: 0%;
-    }
-    
-      .col-xs-5{
-          width: 40%;
-      }
-      
-      .col-xs-1{
-          width: 5%;
-      }
-      
-      .headerDivider{
-          height: 110px;
-          margin-top: 0%;
-          margin-left: 20%;
-          float: right;
-          position: absolute;
-      }
-    
-      .contain{
-          padding-top: 20%;
-          padding-left: 0%;
-          width: 100%;
-          overflow: hidden;
-      }
-    
-      #intro {
-          padding-top: 0%;
-      }
+    section h2.section-heading {
+    font-size: 25px;
+    margin-bottom: 4%;
+    margin-top: 3%;
+	}
 }
 
 /* mobile iphone 6+ portrait*/
@@ -408,304 +369,33 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
   and (min-device-width: 414px) 
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-      
-    /*.navbar-default .nav li a{
-        color: white;
-    }*/
-      
-    .logo{
-        color: black;
-        position: absolute;
-        font-size: 10px;
-        padding-left: 2%;
-    }
-
-    .newbtn{
-        display: block;
-        clear: both;    
-        border-radius: 0%;    
-        font-size: 10px;
-        margin-top: 5%;
-        text-align: center;
-        padding: 2%;
-        width: 40%;
-        padding-left: 2%;
-    }
-      .condensed {
-        font-size: 24px;
-        padding-left: 19%;
-        padding-top: 0%;
-        width: 100%;
-        position: absolute;
-    }
-    
-      .title-logo
-    {   
-        font-size: 27px;
-        padding-top: 3%;
-        padding-right: 0%;
-    }
-    
-      .col-xs-5{
-          width: 40%;
-      }
-      
-      .col-xs-1{
-          width: 5%;
-      }
-      
-      .headerDivider{
-          height: 70px;
-          margin-top: 0%;
-          margin-left: 60%;
-          margin-right: 60%;
-          position: absolute;
-      }
-    
-      .contain{
-          padding-top: 20%;
-          padding-left: 0%;
-          width: 100%;
-          overflow: hidden;
-      }
-    
-      #intro {
-          padding-top: 0%;
-          width: 40%;
-          padding-left: 3%;
-          padding-right: 0%;
-      }
-}
-
+  and (orientation: portrait) {}
 
 /* iphone 6+ landscape */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+  and (orientation: landscape) {}
 
-      .logo{
-        color: black;
-        position: absolute;
-        font-size: 13px;
-        padding-left: 2%;
-    }
-    
-      .newbtn{
-        display: block;
-        clear: both;    
-        border-radius: 0%;    
-        font-size: 10px;
-        margin-top: 10%;
-        text-align: center;
-        padding: 2%;
-        margin-right: 10%;
-    }
       
-   .condensed {
-        font-size: 38px;
-        padding-left: 19%;
-        padding-top: 2%;
-        width: 100%;
-        position: absolute;
-    }
-    
-      .title-logo
-    {   
-        font-size: 40px;
-        padding-top: 2%;
-        padding-right: 0%;
-    }
-    
-      .col-xs-5{
-          width: 40%;
-      }
-      
-      .col-xs-1{
-          width: 5%;
-      }
-      
-      .headerDivider{
-          height: 110px;
-          margin-top: 0%;
-          margin-left: 80%;
-          margin-right: 60%;
-          position: absolute;
-      }
-    
-      .contain{
-          padding-top: 15%;
-          padding-left: 0%;
-          width: 100%;
-          overflow: hidden;
-      }
-      }
-    
-      #intro {
-          padding-top: 0%;
-          width: 98%;
-      }
-}
-
-
-
-/*tablet*/
-@media only screen 
+/*tablet
+ @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-    and (-webkit-min-device-pixel-ratio: 1) {}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
-      
-       .logo{
-        color: darkgray;
-        font-size: 13px;
-        padding-left: 2%;
-          padding-right: 0%;
-          width: 300px;
-        display: block;
+    section h2.section-heading {
+    font-size: 2px !important;
+    margin-bottom: 40%;
+    margin-top: 30%;
+    color: pink !important;
+	}
+    
+   navbar.less .navbar-default{
+        margin-bottom: 30%;
         clear: both;
-    }
-    
-      .newbtn {
         display: block;
-        clear: both;    
-        border-radius: 0%;    
-        font-size: 10px;
-        margin-top: 10%;
-        text-align: center;
-        padding: 2%;
-        margin-right: 10%;
+        background-color: #000 !important;
     }
-      
-   .condensed {
-        font-size: 50px;
-        padding-left: 10%;
-        padding-top: 0%;
-        width: 100%;
-        position: absolute;
-    }
-    
-      .title-logo
-    {   
-        font-size: 50px;
-        padding-top: 6%;
-        padding-right: 0%;
-    }
-    
-      .col-xs-5{
-          width: 40%;
-      }
-      
-      .col-xs-1{
-          width: 5%;
-      }
-      
-      p {
-        padding-left: 10%;
-        padding-right: 10%;
-      }
-      
-      .headerDivider{
-          height: 150px;
-          margin-top: 0%;
-          margin-left: 90%;
-          margin-right: 60%;
-          float: right;
-          position: absolute;
-      }
-    
-      .contain{
-          padding-top: 20%;
-          padding-left: 0%;
-          width: 100%;
-          overflow: hidden;
-      }
-    
-      #intro {
-          padding-top: 0%;
-      }
-    
-
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      
-      .condensed {
-        font-size: 60px;
-        padding-left: 10%;
-        padding-top: 0%;
-        width: 100%;
-        position: absolute;
-          text-align: left;
-    }
-    
-      .title-logo
-    {   
-        font-size:60px;
-        padding-top: 0%;
-        padding-right: 0%;
-    }
-    
-      .contain{
-          padding-top: 20%;
-          padding-bottom: 10%;
-      }
-      
-      p {
-        padding-left: 10%;
-        padding-right: 10%;
-      }
-      
-      .headerDivider{
-          height: 150px;
-          margin-top: 0%;
-          margin-left: 80%;
-          margin-right: 40%;
-          float: right;
-          position: absolute;
-      }
-      
-      #intro{
-          width: 100%;
-          overflow: hidden;
-      }
 
 }
