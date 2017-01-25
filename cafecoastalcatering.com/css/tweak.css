@@ -59,6 +59,10 @@ ul.social-buttons li a{
     background-color: darkseagreen;
 }
 
+section h2.section-heading{
+    font-size: 30px;
+}
+
 
 img.grayscale:hover {
     filter: gray;
