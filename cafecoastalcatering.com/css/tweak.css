@@ -28,7 +28,11 @@
 
 .red {
     background-color: darkseagreen;
-    border-radius: 100%
+    border-radius: 100%;
+}
+
+.sub-service{
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
@@ -63,10 +67,47 @@ section h2.section-heading{
     font-size: 30px;
 }
 
+.car1{
+    background-image: url(../img/images/carousel/starter%20shrimp.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px !important;
+    background-position: 0% 40%;
 
-img.grayscale:hover {
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+}
+.car2{
+    background-image: url(../img/images/carousel/24.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px !important;
+    background-position: 0% 60%;
+
+}
+.car3{
+    background-image: url(../img/images/carousel/main13.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px !important;
+    background-position: 0% 50%;
+}
+.car4{
+    background-image: url(../img/images/carousel/main.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px !important;
+    background-position: 0% 20%;
+}
+img.fade{
+    opacity:1;
+    -webkit-filter: grayscale(20%);
+}
+
+img.fade:hover {
+    opacity:.5;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
 }
 
 .btn {
@@ -156,6 +197,12 @@ section{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+}
+
+.headerCust{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: none;
+    color: dimgray;
 }
 
 .contain{

@@ -34,6 +34,8 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
     
     
 <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
@@ -53,7 +55,7 @@
 </head>
 
 <body id="page-top" class="index">
-    <div data-wow-duration="10s" data-wow-iteration="100">
+    <div data-wow-duration="4s" data-wow-iteration="100">
     
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -101,72 +103,66 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-<!--
-<div class="jumbotron">
-    <div class="container newcontainer">
-        <center><p class="newtitle1">Cafe Coastal Catering</p>
-        </center>
-        <hr class="hr1">
+
+<div>
+   <div id="myCarousel" class="carousel slide">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active row">
+                      <div class="car1">
+                    </div>
+                    </div>
+                    <div class="item row">
+                      <div class="car2">
+                    </div>
+                    </div>
+                    <div class="item row">
+                      <div class="car3">
+                    </div>
+                    </div>
+                    <div class="item row">
+                      <div class="car4">
+                    </div>
+                    </div>
+                </div>
+
+                   <!-- <div class="item">
+                      <img src="img/images/carousel/24.jpg">
+                    </div>
+
+                    <div class="item">
+                      <img src="img/images/carousel/starter%20shrimp.jpg">
+                    </div>-->
+
+                  </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
     </div>
-</div>
-    
-    <!-- Header
-    <section id="intro">
-        <div class="row">
-            <div class="header-container contain" align="center">
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5">
-                    <div class="condensed">Affordable catering to meet your needs.</div>
-                </div>
-                <div class="col-lg-1 col-sm-1 col-md-1 col-xs-1">
-                    <hr class="headerDivider">
-                </div>
-                <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5">
-                    <p class="title-logo">Cafe Coastal Catering</p>
-                </div>
-            </div>
         </div>
-    </section>
-   <!-- <section id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item">
-                    <div class="fill slide1"></div>
-                    <div class="carousel-caption">
-                        <h2>Hello</h2>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Two');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 2</h2>
-                    </div>
-                </div>
-                <div class="item active">
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&amp;text=Slide Three');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 3</h2>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
-        </section>-->
-
+</div>
     <!-- Services Section -->
-
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading col-sm-12">Our Most-Requested Caterings</h2>
+                    <h2 class="section-heading col-sm-12 headerCust">Our Most-Requested Caterings</h2>
                     <h3 class="section-subheading text-muted">The options are limitless.</h3>
                 </div>
             </div>
@@ -176,7 +172,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary red"></i>
                         <i class="fa fa-coffee fa-stack-1x fa-inverse red"></i>
                     </span>
-                    <h4 class="service-heading">Corporate Affairs</h4>
+                    <h4 class="service-heading sub-service">Corporate Affairs</h4>
                     <p class="text-muted">Busy morning ahead? Do not worry. We will provide you and your coworkers with a balanced breakfast and variety of beverages to get you through your meeting mayhem. Please see our sample menu below.</p>
                 </div>
                 <div class="col-md-4">
@@ -184,7 +180,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary red"></i>
                         <i class="fa fa-cutlery fa-stack-1x fa-inverse red"></i>
                     </span>
-                    <h4 class="service-heading">Personal Parties</h4>
+                    <h4 class="service-heading sub-service">Personal Parties</h4>
                     <p class="text-muted">We love getting to know our customers. Our experience includes, but is not limited to: personal home gatherings, holiday parties, church events, university gatherings, and more. Please see our sample menus and gallery below.</p>
                 </div>
                 <div class="col-md-4">
@@ -192,7 +188,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary red"></i>
                         <i class="fa fa-ticket fa-stack-1x fa-inverse red"></i>
                     </span>
-                    <h4 class="service-heading">Formal Events</h4>
+                    <h4 class="service-heading sub-service">Formal Events</h4>
                     <p class="text-muted">Thinking big? No problem. We have done countless political events, weddings, corporate events, and more. Whether formal, fun, or for any other motive, we can make your ideal  event become reality.</p>
                 </div>
             </div>
@@ -204,88 +200,58 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Sample Menus</h2>
-                    <p class="subH">We provide personalized menus for each of our customers. Here are some of our past menu items to help guide you.</p>
+                    <h2 class="section-heading headerCust">Previous Menus</h2>
+                    <hr>
                 </div>
             </div>
-            
             <div class="row">
-            <div class="col-md-4  portfolio-item">
+            <div class="col-md-3 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                             </div>
                         </div> 
-                        <img src="img/portfolio/tiles/entcut23.jpg" class="img-responsive grayscale" alt="">
+                        <img src="img/portfolio/tiles/entcut23.jpg" class="img-responsive fade" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Entrées Galore</h4>
-                        <p class="text-muted">Main Courses &amp; Sandwich Platters</p>
+                        <h4 class="headerCust">Entrées</h4>
                     </div>
                 </div>
-                <div class="col-md-4  portfolio-item">
+                <div class="col-md-3  portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="img/portfolio/tiles/startcut.jpg" class="img-responsive grayscale" alt="">
+                        <img src="img/portfolio/tiles/startcut.jpg" class="img-responsive fade" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Snack Heaven</h4>
-                        <p class="text-muted">Starters</p>
+                    <h4 class="headerCust">Starters</h4>
                     </div>
                 </div>
-                <div class="col-md-4  portfolio-item">
+                <div class="col-md-3  portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="img/portfolio/tiles/buscut.jpg" class="img-responsive grayscale" alt="">
+                        <img src="img/portfolio/tiles/buscut.jpg" class="img-responsive fade" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>The Breakfast Club</h4>
-                        <p class="text-muted">Business Meetings or Early Gatherings</p>
+                        <h4 class="headerCust">Business Meetings &amp; Breakfast</h4>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4  portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content ">
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tiles/descut.jpg" class="img-responsive grayscale" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Sweet-Tooth Central</h4>
-                        <p class="text-muted">Assorted Desserts</p>
-                    </div>
-                </div>
-                <div class="col-md-4  portfolio-item">
+                <div class="col-md-3  portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                             </div>
                         </div>
-                        <img src="img/portfolio/tiles/partycut2.jpg" class="img-responsive grayscale" alt="">
+                        <img src="img/portfolio/tiles/partycut2.jpg" class="img-responsive fade" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Get Your Party Pants On</h4>
-                        <p class="text-muted">Large Gatherings</p>
+                        <h4 class="headerCust">Large Gatherings</h4>
                     </div>
-                </div>
-                <div class="col-md-4  portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                            </div>
-                        </div>
-                        <img src="img/portfolio/tiles/partycut.jpg" class="img-responsive grayscale" alt="">
-                        <h3 align="center">GALLERY</h3>
-                    </a>
                 </div>
             </div>
         </div>
@@ -295,7 +261,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
+                    <h2 class="section-heading headerCust">About</h2>
                     <h3 class="section-subheading text-muted">Cheers to <b>30</b> years of excellence.</h3>
                 </div>
             </div>
